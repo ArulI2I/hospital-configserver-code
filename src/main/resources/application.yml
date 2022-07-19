@@ -1,0 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: '8888'
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ArulI2I/hospital-config-server
+          searchPaths: hospital*
